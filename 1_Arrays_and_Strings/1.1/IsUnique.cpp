@@ -22,7 +22,7 @@ bool unique_characters(string s)
 
 int main()
 {
-    string array[] = {"Nikola", "Nikolina", "Marijan", "Marijana", "Dejan", "Dejana"};
+    string array[] = {"nikola", "nikolina", "marijan", "marijana", "dejan", "dejana"};
     
     for(int i = 0; i < sizeof(array)/sizeof(string); ++i)
     {
