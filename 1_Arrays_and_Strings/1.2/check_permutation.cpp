@@ -9,6 +9,9 @@ using namespace std;
 
 bool check_permutation(string s1, string s2)
 {
+    if(s1.length() != s2.length())
+        return false;
+   
     int* p = new int[ASCII];
     
     for(int i = 0; i < ASCII; ++i)
