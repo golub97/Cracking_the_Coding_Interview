@@ -14,7 +14,6 @@ void replaceSpaces(string &str, int trueLength)
     
     for(int i = trueLength - 1; i >= 0; --i)
     {
-        cout<< "character " << str[i] << " before =>" << str << endl;
         if(str[i] == ' ')
         {
             str[index - 1] = '0';
@@ -28,7 +27,6 @@ void replaceSpaces(string &str, int trueLength)
             str[index - 1] = str[i];
             --index;
         }
-        cout<< "character " << str[i] << " after  =>" << str << endl;
     }
 }
 
