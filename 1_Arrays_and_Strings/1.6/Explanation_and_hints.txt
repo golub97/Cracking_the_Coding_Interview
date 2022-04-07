@@ -1,0 +1,27 @@
+At first glance, implementing this method seems fairly straightforward, but perhaps a bit tedious. 
+We iterate through the string, copying characters to a new string and counting the repeats. 
+At each iteration, check if the current character is the same as the next character. 
+If not, add its compressed version to the result. 
+
+Solution in C++
+How hard could it be? 
+
+This works. ls it efficient, though?Take a look at the runtime of this code.
+
+The runtime is O(p + k2), where p is the size of the original string and k is thel number of character sequences. 
+For example, if the string is aabccdeeaa, then there are six characte sequences. 
+It's slow because string concatenation operates in O(n2) time (see StringBuilder on page 89). 
+
+Solution in Java (first)
+Both of these solutions create the compressed string first 
+and then return the shorter of the input string and the compressed string.
+
+Solution in Java (second)
+Instead, we can check in advance. 
+This will be more optimal in cases where we don't have a large number of repeating characters. 
+It will avoid us having to create a string that we never use. 
+The downside of this is that it causes a second loop through the characters and also adds nearly duplicated code.
+
+One other benefit of this approach is that we can initialize StringBuilder to its necessary capacity up-front. 
+Without this, StringBuilder will (behind the scenes) need to double its capacity every time it hits capacity. 
+The capacity could be double what we ultimately need. 
