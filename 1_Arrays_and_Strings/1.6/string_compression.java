@@ -51,12 +51,12 @@ public class Main
 	    String s3 = "aaabbbcccdddeeefff";
 	    
 	    String result = obj.compress(s1);
-      System.out.println(result);
+            System.out.println(result);
         
-      result = obj.compress(s2);
-      System.out.println(result);
+            result = obj.compress(s2);
+            System.out.println(result);
         
-      result = obj.compress(s3);
-      System.out.println(result);
+            result = obj.compress(s3);
+            System.out.println(result);
 	}
 }
