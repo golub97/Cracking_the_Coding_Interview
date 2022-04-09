@@ -15,7 +15,7 @@ bool rotate(vector<vector<int>> matrix)
     int offset = 0; 
     int top = 0;
 
-    for (int layer = 0; layer < n / 2; layer++)
+    for (int layer = 0; layer < n; layer++) //it can also be n/2
     {
         int first = layer;                
         int last = n - 1 - layer;
@@ -74,6 +74,31 @@ int main()
     cout << endl;
     
     rotate(matrix);
+    
+    cout << endl;
+    
+    //////////////////////////////////////////////////////////////////
+    n = 4;
+    vector<vector<int>> matrix1
+    { 
+        { 1, 2, 3, 4},
+        { 5, 6, 7, 8},
+        { 1, 2, 3, 4},
+        { 5, 6, 7, 8}
+    };
+    
+    for(int i = 0; i < n; ++i)  
+    {
+        for(int j = 0; j < n; ++j)  
+        {
+            cout << matrix1[i][j] << " "; 
+        }
+        cout << endl;  
+    }
+    
+    cout << endl;
+    
+    rotate(matrix1);
     
     return 0;
 }
