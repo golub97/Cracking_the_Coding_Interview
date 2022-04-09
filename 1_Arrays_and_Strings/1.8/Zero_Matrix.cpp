@@ -71,7 +71,6 @@ int main()
     }
     
     cout << endl;
-    
     zer_matrix(matrix);
     
     for(int i = 0; i < matrix.size(); ++i)  
