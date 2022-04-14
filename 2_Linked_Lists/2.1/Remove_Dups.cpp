@@ -86,6 +86,8 @@ void remove_duplicates(Node *head_ref)
             previous = current;
         }
         current = previous->next; //free(): double free detected in tcache 2, if current = current->next;
+                                  //mostly/often we use current = current->next to move to another node
+                                  //In this case we can't use that approach because we should delete current.
     }
 }
 
