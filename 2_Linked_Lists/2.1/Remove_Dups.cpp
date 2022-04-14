@@ -128,7 +128,8 @@ void printList(Node *node)
 {
     while (node != nullptr)
     {
-        cout << " " << node->data;
+        cout << node->data << " -> ";
         node = node->next;
     }
+    cout << "nullptr";
 }
