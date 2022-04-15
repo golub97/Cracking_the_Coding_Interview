@@ -79,5 +79,5 @@ int printKthToLast(Node* head, int kth)
     if(index == kth)
         cout << kth << " element is: " << head->data << endl;
         
-    return index; 
+    return index; //Don't Return the Element. 
 }
