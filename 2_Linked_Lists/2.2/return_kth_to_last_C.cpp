@@ -81,9 +81,6 @@ void print_list(Node* head)
     cout << "nullptr" << endl;
 }
 
-Node* kthTolast(Node* head, int k);
-Node* kthToLast(Node* head, int k, Index idx);
-
 Node* kthTolast(Node* head, int k) 
 {
     Index* idx = new Index();
