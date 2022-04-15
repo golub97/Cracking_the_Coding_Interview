@@ -83,7 +83,7 @@ void remove_duplicates(Node* head)
         {
             if(current->data == runner->next->data)
             {
-                runner->next = runner->next->next;
+                runner->next = runner->next->next; //Without deleting :O
             }
             else
             {
