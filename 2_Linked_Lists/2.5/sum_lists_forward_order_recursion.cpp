@@ -87,7 +87,7 @@ Node* addlists(Node* list1, Node* list2)
     else
     {
         Node* result = insertBefore(summ->sum, summ->carry);
-            return result; 
+        return result; 
     }
 }
 
@@ -96,7 +96,7 @@ PartialSum* addListsHelper(Node* list1, Node* list2)
     if (list1 == nullptr && list2 == nullptr)
     {
         PartialSum* sum = new PartialSum();
-            return sum;
+        return sum;
     }
     
     /* Add smaller digits recursively*/
