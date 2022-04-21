@@ -1,0 +1,13 @@
+This problem can be approached in three key steps:
+1. Clear the bits j through i in N
+2. Shift M so that it lines up with bits j through i
+3. Merge Mand N. 
+
+The trickiest part is Step 1. 
+How do we clear the bits in N? 
+We can do this with a mask. 
+This mask will have all 1s, except for Os in the bits j through i. 
+We create this mask by creating the left half of the mask first, and then the right half.
+
+In a problem like this (and many bit manipulation problems), you should make sure to thoroughly test your code. 
+It's extremely easy to wind up with off-by-one errors. 
