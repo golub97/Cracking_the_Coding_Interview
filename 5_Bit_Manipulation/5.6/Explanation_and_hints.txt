@@ -1,0 +1,16 @@
+Solution #1.
+This seemingly complex problem is actually rather straightforward.
+To approach this, ask yourself how you would figure out which bits in two numbers are different. 
+Simple: with an XOR.
+Each 1 in the XOR represents a bit that is different between A and B. 
+Therefore, to check the number of bits that are different between A and B, 
+we simply need to count the number of bits in A^B that are 1.
+
+Solution #2.
+This code is good, but we can make it a bit better. 
+Rather than simply shifting c repeatedly while checking
+the least significant bit, we can continuously flip the least significant bit and count how long it takes c to reach 0. 
+The operation c = c & (c - 1) will clear the least significant bit in c. 
+
+The above code is one of those bit manipulation problems that comes up sometimes in interviews. 
+Though it'd be hard to come up with it on the spot if you've never seen it before, it is useful to remember the trick for your interviews. 
