@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+
 string printBinary(double num) 
 {
     if(num >= 1 || num <= 0)
